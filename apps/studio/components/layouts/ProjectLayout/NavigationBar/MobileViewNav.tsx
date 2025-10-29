@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react'
 import { useAppStateSnapshot } from 'state/app-state'
-import { cn } from '@ui/lib/utils'
+import { cn } from '../../../../../../packages/ui/src/lib/utils'
 
 interface Props {
   title?: string
