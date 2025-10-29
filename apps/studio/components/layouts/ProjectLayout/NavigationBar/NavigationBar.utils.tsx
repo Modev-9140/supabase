@@ -7,16 +7,7 @@ import { generateSettingsMenu } from 'components/layouts/ProjectSettingsLayout/S
 import type { Route } from 'components/ui/ui.types'
 import { EditorIndexPageLink } from 'data/prefetchers/project.$ref.editor'
 import type { Project } from 'data/projects/project-detail-query'
-import {
-  Auth,
-  Database,
-  EdgeFunctions,
-  Realtime,
-  Reports,
-  SqlEditor,
-  Storage,
-  TableEditor,
-} from 'icons'
+import { Auth, Database, EdgeFunctions, Realtime, Reports, SqlEditor, Storage, TableEditor } from 'icons'
 import { IS_PLATFORM, PROJECT_STATUS } from 'lib/constants'
 
 export const generateToolRoutes = (ref?: string, project?: Project, features?: {}): Route[] => {
@@ -133,12 +124,6 @@ export const generateProductRoutes = (
           },
         ]
       : []),
-    {
-      key: 'collections',
-      label: 'Collections',
-      icon: <List size={ICON_SIZE} strokeWidth={ICON_STROKE_WIDTH} />,
-      link: ref && (isProjectBuilding ? buildingUrl : `/project/${ref}/collections`),
-    },
   ]
 }
 

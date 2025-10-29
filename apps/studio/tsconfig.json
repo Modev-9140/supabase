@@ -17,7 +17,9 @@
     "downlevelIteration": true,
     "incremental": true,
     "paths": {
-      "@ui/*": ["./../../packages/ui/src/*"] // handle ui package paths
+      "@ui/*": ["./../../packages/ui/src/*"],
+      "icons": ["./../../packages/icons/src/icons"],
+      "common": ["./../../packages/common/src/index.ts"]
     },
     "useDefineForClassFields": true,
     "plugins": [
