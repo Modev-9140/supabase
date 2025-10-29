@@ -133,6 +133,12 @@ export const generateProductRoutes = (
           },
         ]
       : []),
+    {
+      key: 'collections',
+      label: 'Collections',
+      icon: <List size={ICON_SIZE} strokeWidth={ICON_STROKE_WIDTH} />,
+      link: ref && (isProjectBuilding ? buildingUrl : `/project/${ref}/collections`),
+    },
   ]
 }
 
